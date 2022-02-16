@@ -1,0 +1,19 @@
+*,*::after, *::before{
+    margin:0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    // This defines what 1rem is 
+    // ( 625/1000 ) * 16
+    // browser defaults size (font-size) to 16px 
+    // so 62.5% of 16 gives 10.
+    // else font-size: 10px; also will work fine
+    font-size: 62.5%;
+}
+
+
+body{
+    box-sizing: border-box;
+}
