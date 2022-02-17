@@ -2,6 +2,7 @@
     &__group{
         margin-bottom: 2rem;
     }
+    
     &__input{
         font-size: 1.5rem;
         padding: 1.5rem 2rem;
@@ -48,6 +49,11 @@
     &__radio-group{
         width: 49%;
         display: inline-block;
+
+        @include respond(tab-port){
+            width: 100%;
+            margin-bottom: 2rem;
+        }
     }
 
     &__radio-input{

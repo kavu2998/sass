@@ -11,9 +11,24 @@ html {
     // so 62.5% of 16 gives 10.
     // else font-size: 10px; also will work fine
     font-size: 62.5%;
+
+    @include respond (tab-land){
+        font-size: 56.25%;
+    }
+    @include respond (tab-port){
+        font-size: 50%;
+    }
+    @include respond (big-desktop){
+        font-size: 56.25%;
+    }
 }
 
 
 body{
     box-sizing: border-box;
+    padding: 3rem;
+
+    @include respond (tab-port){
+        padding: 0;
+    }
 }
